@@ -13,7 +13,7 @@ public class TestController {
 
     @RequestMapping("/test/hello")
     public String testHello(){
-        return testHello +"world!";
+        return testHello +" world!";
     }
 
     @RequestMapping("/hello")
@@ -22,6 +22,6 @@ public class TestController {
     }
     @PostMapping("/hello/post")
     public String helloPost(String name){
-        return "Hello" + name;
+        return "Hello " + name;
     }
 }
