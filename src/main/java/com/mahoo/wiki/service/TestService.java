@@ -1,6 +1,6 @@
 package com.mahoo.wiki.service;
 
-import com.mahoo.wiki.entity.Test;
+import com.mahoo.wiki.domain.Test;
 import com.mahoo.wiki.mapper.TestMapper;
 import org.springframework.stereotype.Service;
 

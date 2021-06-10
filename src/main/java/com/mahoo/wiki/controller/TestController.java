@@ -1,6 +1,6 @@
 package com.mahoo.wiki.controller;
 
-import com.mahoo.wiki.entity.Test;
+import com.mahoo.wiki.domain.Test;
 import com.mahoo.wiki.service.TestService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;

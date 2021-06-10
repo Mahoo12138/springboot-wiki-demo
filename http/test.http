@@ -24,7 +24,7 @@ GET http://localhost:8899/hello
 %}
 
 ###
-GET http://localhost:8899/test/mybatis
+GET http://localhost:8899/test/demo
 Accept: application/json
 
 ###

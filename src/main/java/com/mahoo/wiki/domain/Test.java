@@ -1,4 +1,4 @@
-package com.mahoo.wiki.entity;
+package com.mahoo.wiki.domain;
 // 实体类 与表名一一对应
 public class Test {
     private Integer id;
