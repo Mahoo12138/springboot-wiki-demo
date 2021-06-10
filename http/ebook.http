@@ -2,3 +2,7 @@ GET http://localhost:8899/ebook/test
 Accept: application/json
 
 ###
+GET http://localhost:8899/ebook/query?name=Vue
+Accept: application/json
+
+###

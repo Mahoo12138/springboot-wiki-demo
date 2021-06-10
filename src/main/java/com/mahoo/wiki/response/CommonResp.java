@@ -1,4 +1,4 @@
-package com.mahoo.wiki.resp;
+package com.mahoo.wiki.response;
 
 public class CommonResp<T> {
 
