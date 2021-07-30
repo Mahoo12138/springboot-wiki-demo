@@ -93,7 +93,7 @@ export default defineComponent({
 
     const book1 = ref();
     const book2 = reactive({ebook: []});
-    axios.get("http://localhost:8899/ebook/list").then((res)=>{
+    axios.get("/ebook/list").then((res)=>{
       // console.log(res)
       book1.value = res.data.content;
       book2.ebook = res.data.content;
