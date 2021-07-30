@@ -48,13 +48,15 @@
     <a-layout-content
         :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
-      Content
+      Content:
+      {{book1}}
+      {{book2}}
     </a-layout-content>
   </a-layout>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import {defineComponent, reactive, ref} from 'vue';
 import axios from "axios";
 
 export default defineComponent({
@@ -63,9 +65,19 @@ export default defineComponent({
   },
   setup(){
     console.log("OK!")
+
+    const book1 = ref();
+    const book2 = reactive({ebook: []})
     axios.get("http://localhost:8899/ebook/query?name=Spring").then((res)=>{
-      console.log(res)
+      // console.log(res)
+
+      book1.value = res.data.content;
+      book2.ebook = res.data.content;
     })
+    return {
+      book1,
+      book2
+    }
   }
 });
 </script>
