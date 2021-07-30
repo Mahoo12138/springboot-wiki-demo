@@ -1,6 +1,5 @@
 package com.mahoo.wiki.controller;
 
-import com.mahoo.wiki.domain.Ebook;
 import com.mahoo.wiki.request.EbookReq;
 import com.mahoo.wiki.response.CommonResp;
 import com.mahoo.wiki.response.EbookResp;
@@ -19,8 +18,8 @@ public class EbookController {
     private EbookService ebookService;
 
     @RequestMapping("/list")
-    public CommonResp<List<Ebook>> list(){
-        CommonResp<List<Ebook>> resp = new CommonResp<>();
+    public CommonResp<List<EbookResp>> list(){
+        CommonResp<List<EbookResp>> resp = new CommonResp<>();
         resp.setContent(ebookService.list());
         return resp;
     }

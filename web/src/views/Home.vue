@@ -112,3 +112,12 @@ export default defineComponent({
   }
 });
 </script>
+
+<style scoped>
+.ant-avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 8%;
+  line-height: 50px;
+}
+</style>
