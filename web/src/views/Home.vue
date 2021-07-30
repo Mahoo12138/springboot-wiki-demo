@@ -55,10 +55,17 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import axios from "axios";
 
 export default defineComponent({
   name: 'Home',
   components: {
   },
+  setup(){
+    console.log("OK!")
+    axios.get("http://localhost:8899/ebook/query?name=Spring").then((res)=>{
+      console.log(res)
+    })
+  }
 });
 </script>
