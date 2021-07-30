@@ -18,7 +18,7 @@ public class EbookController {
     @Resource
     private EbookService ebookService;
 
-    @RequestMapping("/test")
+    @RequestMapping("/list")
     public CommonResp<List<Ebook>> list(){
         CommonResp<List<Ebook>> resp = new CommonResp<>();
         resp.setContent(ebookService.list());
