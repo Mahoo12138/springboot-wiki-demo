@@ -2,7 +2,7 @@ package com.mahoo.wiki.config;
 
 
 //import com.mahoo.wiki.interceptor.LoginInterceptor;
-import com.mahoo.wiki.interceptor.LogInterceptor;
+//import com.mahoo.wiki.interceptor.LogInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -17,12 +17,13 @@ public class SpringMvcConfig implements WebMvcConfigurer {
 
 //    @Resource
 //    ActionInterceptor actionInterceptor;
-    @Resource
-    LogInterceptor logInterceptor;
+
+//    @Resource
+//    LogInterceptor logInterceptor;
 
     public void addInterceptors(InterceptorRegistry registry) {
         /** 针对所有请求 但是排除掉登录请求 **/
-        registry.addInterceptor(logInterceptor).addPathPatterns("/**").excludePathPatterns("/login");
+//        registry.addInterceptor(logInterceptor).addPathPatterns("/**").excludePathPatterns("/login");
 
 //        registry.addInterceptor(loginInterceptor)
 //                .addPathPatterns("/**")
